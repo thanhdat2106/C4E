@@ -1,11 +1,20 @@
-.body {
+@font-face {
+  font-family: myFirstFont;
+  src: url(./assets/fonts/Legendday\ Regular.ttf);
+}
+body {
   margin: 0;
   padding: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  font-family: "myFirstFont";
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
 }
 .flex-container {
   display: flex;
 }
-.container1 {
+.container-right-top {
   background-color: #273238;
   display: flex;
   flex-direction: column;
@@ -15,7 +24,7 @@
   width: 300px;
   padding-top: 10px;
 }
-.container2 {
+.container-right-bottom {
   background-color: #36474f;
   display: flex;
   flex-direction: column;
@@ -144,7 +153,8 @@
   padding-left: 40px;
   padding-right: 40px;
   width: 500px;
-  height: 800px;
+  height: auto;
+  background-color: #fff;
 }
 .title-left-job {
   font-size: 20px;
@@ -154,4 +164,7 @@
 .icon-size-lelf {
   width: 5px;
   height: 5px;
+}
+.margin-top-20 {
+  margin-top: 20px;
 }
