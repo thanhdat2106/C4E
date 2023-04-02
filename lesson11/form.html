@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script type="text/javascript" src="action.js"></script>
+  <body>
+    <style>
+      .header {
+        text-align: center;
+      }
+      .bieumau {
+        padding: 0 10px;
+        margin: 10px 0px;
+      }
+      .bieumau2 {
+        padding: 0 10px;
+        margin: 10px 0px;
+      }
+      .ten,
+      .tendem,
+      .ho,
+      .sdt,
+      .sdt1,
+      .mail,
+      .matkhau,
+      .ghilaimk,
+      .nut {
+        width: 100%;
+        height: 35px;
+        margin-top: 5px;
+        border-width: 0px;
+      }
+      .diachi {
+        width: 100%;
+        border-width: 0px;
+      }
+      .khoahoc {
+        margin-top: 30px;
+        height: 30px;
+      }
+      .thongtin {
+        width: 100%;
+      }
+      .bieumau2 {
+        width: 98.9%;
+        height: 35px;
+        margin-top: 10px;
+      }
+      .diachi {
+        margin-top: 8px;
+      }
+      .mail,
+      .matkhau {
+        margin-bottom: 20px;
+      }
+      .ghilaimk,
+      .sdt {
+        margin-bottom: 30px;
+      }
+      .nut {
+        background-color: rgb(36, 171, 36);
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      ::placeholder {
+        padding-left: 5px;
+        font-weight: lighter;
+      }
+    </style>
+    <style>
+      body {
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        width: 500px;
+        height: 1200px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(147, 233, 233);
+      }
+    </style>
+    <div class="container">
+      <div>
+        <div class="header">
+          <h1>Student Registeration Form</h1>
+          <hr color="#fff" />
+        </div>
+
+        <form id="myform">
+          <div>
+            Firstname<br />
+            <input
+              type="text"
+              class="ten"
+              id="ten"
+              name="Firstname"
+              placeholder="firstname"
+            />
+            <br /><br />
+            Middlename:<br />
+            <input
+              type="text"
+              class="tendem"
+              id="tendem"
+              name="Middlename"
+              placeholder="middlename"
+            />
+            <br /><br />
+            Lastname:<br />
+            <input
+              type="text"
+              class="ho"
+              id="ho"
+              name="Lastname"
+              placeholder="lastname"
+            />
+            <br />
+          </div>
+          <div class="khoahoc">
+            <label for="lang-select">Course:</label>
+            <select name="lang" id="lang-select">
+              <option value="">Coure</option>
+              <option value="Full-stack">Full-stack</option>
+              <option value="Back-end">Back-end</option>
+              <option value="Front-end">Front-end</option>
+            </select>
+          </div>
+          <br />
+          Gender:
+          <input type="radio" id="gioitinh" name="gioitinh" value="1" />Male
+          <input type="radio" id="gioitinh" name="gioitinh" value="0" />Female
+          <input type="radio" id="gioitinh" name="gioitinh" value="2" />Other
+          <br /><br />
+          <div>
+            <label for="phone">Phone:</label><br />
+            <input type="tel" class="sdt" name="phone" placeholder="+91" />
+            <br />
+            <input type="text" class="sdt1" id="sdt1" placeholder="phone no" />
+            <br /><br />
+            Current Address:<br />
+            <textarea
+              cols="20"
+              class="diachi"
+              id="diachi"
+              rows="10"
+              placeholder="Current Address"
+            ></textarea>
+            <br /><br />
+            <b>Email</b><br />
+            <input
+              type="emai"
+              class="mail"
+              id="mail"
+              placeholder="Enter Email"
+            />
+            <br />
+            <b>Password</b><br />
+            <input
+              type="password"
+              class="matkhau"
+              id="matkhau"
+              placeholder="Enter Password"
+            />
+            <br />
+            <b>Re-type Password</b><br />
+            <input
+              type="password"
+              class="ghilaimk"
+              id="ghilaimk"
+              placeholder="Retype Password"
+            />
+            <br />
+          </div>
+          <button type="button" onclick="SubmitForm()">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <!-- <script>
+    function SubmitForm() {
+      const data = {
+        Firstname: "",
+        Middlename: "",
+        Lastname: "",
+        Course: "",
+        Gender: "",
+        Phone: "",
+        CurrentAddress: "",
+        Email: "",
+        Password: "",
+        RetypePassword: "",
+      };
+      let $ten = document.getElementById("ten").value;
+      let $tenDem = document.getElementById("tendem").value;
+      let $ho = document.getElementById("ho").value;
+      let $khoaHoc = document.getElementById("lang-select").value;
+      let $sdt = document.getElementById("sdt1").value;
+      let $gioiTinh = document.getElementById("gioitinh").value;
+      let $diaChi = document.getElementById("diachi").value;
+      let $mail = document.getElementById("mail").value;
+      let $matKhau = document.getElementById("matkhau").value;
+      let $reMatKhau = document.getElementById("ghilaimk").value;
+      data.Firstname = $ten;
+      data.Middlename = $tenDem;
+      data.Lastname = $ho;
+      data.Course = $khoaHoc;
+      data.Phone = $sdt;
+      data.Gender = $gioiTinh;
+      data.CurrentAddress = $diaChi;
+      data.Email = $mail;
+      data.Password = $matKhau;
+      data.RetypePassword = $reMatKhau;
+
+
+      console.log(1231331, data);
+    }
+  </script> -->
+  <!-- <script type="module" src="action.js"></script> -->
+</html>
