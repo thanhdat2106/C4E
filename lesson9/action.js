@@ -45,16 +45,25 @@
 // Giả sử d1, d2 là các dãy số xếp theo thứ tự tăng dần. Hãy tạo ra 1 dãy số theo thứ tự tăng dần bao gồm các số của d1 và d2 (Sử dụng core của thuật toán Merge Sort).
 // https://www.geeksforgeeks.org/merge-sort/?ref=lbp
 
-let arr1 = [1, 2, 5, 4, 6, 8, 9];
-let arr2 = [3, 2, 7, 4, 12, 35, 10];
-// Kiểm tra xem tất cả các giá trị số trong d1 có nằm trong d2 không.
+// let arr1 = [3, 2];
+// let arr2 = [3, 2, 7, 4, 12, 35, 10];
+// // // Kiểm tra xem tất cả các giá trị số trong d1 có nằm trong d2 không.
 // let check = true;
 // arr1.forEach((x) => {
-//   if (!arr2.includes(x)) {
+//   const result = arr2.some((y) => y == x);
+//   if (!result) {
 //     check = false;
+//     return;
 //   }
 // });
-// console.log(check == false && "tat ca gia trij so trong d1 khong nam trong d2");
+// check
+//   ? console.log("Tat ca cac gia tri so trong d1  nam trong d2")
+//   : console.log("Tat ca cac gia tri so trong d1 khong nam trong d2");
+// // console.log(check == false && "tat ca gia trij so trong d1 khong nam trong d2");
+// let check = arr1.some((x) => {
+//   arr2.includes(x);
+// });
+// console.log(123, check);
 
 // Kiểm tra xem có phần tử nào trong d2 chia hết cho tổng của d1 không.
 
@@ -119,4 +128,56 @@ let arr2 = [3, 2, 7, 4, 12, 35, 10];
 //   // *** kết hợp (merge) các cặp mảng con đã được sắp xếp lại với nhau thành một mảng mới,
 //   return [...sortedItems, ...left, ...right];
 // };
-console.log(mergeSort(arr2));
+// console.log(mergeSort(arr2));
+
+// data = [
+//   {
+// id:"dadasdd"
+//     tenSanPham: "a123",
+//     gia: 21331303,
+//     mota: "sadasdd",
+//   },
+//   {
+//     tenSanPham: "a123",
+//     gia: 21331303,
+//     mota: "sadasdd",
+//   },
+//   {
+//     tenSanPham: "a123",
+//     gia: 21331303,
+//     mota: "sadasdd",
+//   },
+//   {
+//     tenSanPham: "a123",
+//     gia: 21331303,
+//     mota: "sadasdd",
+//   },
+// ];
+
+// function TimNghiem(a, b, c) {}
+
+// const TimNghiem = (a, b, c) => {
+//   if (a == 0) return;
+//   else {
+//     let arrNghiem = [];
+//     // thuc thi tim nghiem
+//   }
+//   // log nghiem
+// };
+
+// //Trước tiên phải đảm bảo ba cạnh a, b, c đều dương, sau đó mới tiến hành kiểm tra tiếp. Nếu xảy ra đồng thời ba điều kiện (a + b > c) && (a + c > b) && (b + c > a) thì kết luận ba cạnh lập thành một tam giác.
+
+// const KiemTraTamGiac = (a, b, c) => {
+//   if (a > 0 && b > 0 && c > 0) {
+//   } else {
+//     return;
+//   }
+// };
+
+// bai
+
+// const d = new Date("2022-04-32");
+// console.log(123, d);
+
+var iDiv = document.createElement("div");
+document.getElementById("v1").appendChild(iDiv);

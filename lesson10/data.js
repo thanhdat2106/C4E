@@ -550,3 +550,5 @@ export const users = [
     is_married: false,
   },
 ];
+
+export let sanPham = [{}];

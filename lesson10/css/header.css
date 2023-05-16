@@ -1,0 +1,149 @@
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #515154;
+    z-index: 999;
+
+}
+
+.header-container {
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo a {
+    height: 60px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.header-img {
+    max-height: 80%;
+    max-width: 80%;
+}
+
+.header-menu {
+    height: 68px;
+}
+
+.header-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+
+.header-menu .top-menu {
+    display: flex;
+    list-style: none;
+}
+
+.header-menu .subnav {
+    position: absolute;
+    background-color: rgb(84, 84, 84);
+    width: 150px;
+    display: none;
+}
+
+.header-menu .subnav li {
+    padding: 10px 10px;
+}
+
+.header-menu .subnav li:hover {
+    background-color: #626265;
+}
+
+.header-menu li:hover>.subnav {
+    display: block;
+    top: 100%;
+    left: 0;
+}
+
+.top-menu>li {
+    position: relative;
+    padding: 22px 16px;
+}
+
+.header-wrapper {
+    width: 172px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+}
+
+.header-wrapper a {
+    color: #fff;
+}
+
+.header-wrapper a:hover {
+    opacity: 0.9;
+    color: #fff;
+}
+
+.header-wrapper .header-bagshop {
+    position: relative;
+}
+
+.header-wrapper .cal-item {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 50%;
+    border: #515154 solid 0.5px;
+    text-align: center;
+    background-color: #fff;
+    color: #515154;
+}
+
+.header-user {
+    position: relative;
+    line-height: 68px;
+}
+
+.header-bagshop,
+.header-search,
+.header-user {
+    padding: 0 16px;
+}
+
+.header-user .subnav-user {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #000;
+    background-color: rgba(255, 255, 255, 0.906);
+    width: 230px;
+}
+
+.subnav-user a {
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+.subnav-user>li:hover {
+    opacity: 0.8;
+}
+
+.header-user:hover .subnav-user li {
+    display: block;
+}
+
+.subnav-user li {
+    display: none;
+    line-height: normal;
+    padding: 10px 40px;
+    margin: 10px 0;
+}

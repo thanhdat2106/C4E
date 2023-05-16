@@ -1,0 +1,35 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.header {
+  display: flex;
+  height: 100px;
+  background-color: cadetblue;
+}
+.container-flex {
+  display: flex;
+  height: 800px;
+  background-color: aqua;
+}
+.leftSide,
+.rightSide {
+  background-color: bisque;
+  width: 25%;
+}
+.content {
+  background-color: aquamarine;
+  width: 50%;
+}
+.row {
+  display: flex;
+  flex-direction: row-reverse;
+}
+/* .column {
+  width: 25%;
+} */
+@media screen and (max-width: 990px) {
+  .column {
+    width: 30%;
+  }
+}

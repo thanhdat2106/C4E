@@ -8,12 +8,12 @@ import { users } from "./data.js";
 // Nhập vào 1 chuỗi keyword. Hãy lấy ra email của các user có tên (first_name + last_name) chứa keyword.
 // let n = prompt("Nhap chuoi keyword");
 // let listEmail = [];
-// users.forEach((x) => {
-//   const name = x.first_name + " " + x.last_name;
-//   if (name.search(n) >= 0) {
-//     listEmail.push(x.email);
-//   }
-// });
+users.forEach((x) => {
+  const name = x.first_name + " " + x.last_name;
+  if (name.search(n) >= 0) {
+    listEmail.push(x.email);
+  }
+});
 // console.log(123, listEmail);
 // Đếm số lượng user có age > 50.
 // const count = users.filter((x) => x.age > 50).length;

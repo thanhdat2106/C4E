@@ -179,7 +179,7 @@ body {
   color: #222222;
   font-size: 28px;
   cursor: pointer;
-  display: none;
+  display: none !important;
   line-height: 0;
   transition: 0.5s;
 }
@@ -190,7 +190,7 @@ body {
 
 @media (max-width: 991px) {
   .mobile-nav-toggle {
-    display: block;
+    display: block !important;
   }
 
   .navbar ul {
@@ -295,12 +295,11 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-items: center;
-
   width: 80%;
 }
 .column-grid {
   display: flex;
-  width: 80%;
+  width: 300px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -336,7 +335,6 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     justify-items: center;
-
     width: 80%;
   }
 }
@@ -348,6 +346,11 @@ body {
 
     width: 80%;
   }
+}
+.content-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 /*--------------------------------------------------------------
 # Content-grid

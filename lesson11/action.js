@@ -53,7 +53,6 @@ function SubmitForm() {
   data.Email = $mail;
   data.Password = $matKhau;
   data.RetypePassword = $reMatKhau;
-  let check = false;
   if (!checkPhone($sdt)) {
     console.log(checkPhone($sdt));
     alert("Số điện thoại nhập chưa đúng");
@@ -64,4 +63,5 @@ function SubmitForm() {
   } else {
     console.log(1231331, data);
   }
+  console.log(122333);
 }

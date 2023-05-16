@@ -1,8 +1,72 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <script type="module" src="action.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Framework -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script type="text/javascript" src="action.js"></script>
   </head>
+  <body>
+    <div id="myHTMLWrapper"></div>
+
+    <script>
+      var wrapper = document.getElementById("myHTMLWrapper");
+
+      var myHTML = "";
+
+      for (var i = 0; i < 10; i++) {
+        myHTML += `<div class="box-product">
+                    <div class="box-img">
+                        <a href="">
+                            <img src="./img/iphone/iphone14pro/iphone_14_pro_gold.png" alt="">
+                        </a>
+                    </div>
+                    <div class="box-title">
+                        iPhone 14 Promax 128GB
+                    </div>
+                    <div class="box-price">
+                        <div class="price-actual">
+                            27.000.000
+                        </div>
+                        <div class="price-old">
+                            32.000.000
+                        </div>
+                    </div>
+                    <div class="btn-add-cart">
+                        <a class="box-add-cart" href="">
+                            <div class="box-add-btn">
+                                Add to cart
+                            </div>
+                            <div class="box-icon">
+                                <i class="fa-solid fa-cart-arrow-down fa-xl"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>`;
+      }
+
+      wrapper.innerHTML = myHTML;
+    </script>
+  </body>
 </html>

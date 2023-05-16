@@ -4,31 +4,118 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="action.js"></script>
-    <title>Document</title>
-  </head>
+    <title>Registeration</title>
 
-  <body>
-    <form action="" id="loginForm">
-      <h1>Login</h1>
-      <input
-        type="text"
-        id="username"
-        class="form-control"
-        placeholder="Enter your Username..."
-      />
-      <input
-        type="password"
-        id="password"
-        class="form-control"
-        placeholder="Enter your Password..."
-      />
-      <button type="button" onclick="test()">Submit</button>
-    </form>
-  </body>
-  <script>
-    function test() {
-      console.log(1231331);
+    <script type="text/javascript" src="action.js"></script>
+  </head>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
     }
-  </script>
+    .main {
+      background: #87cefa;
+      flex-direction: column;
+      width: 500px;
+      align-items: center;
+    }
+    input {
+      padding: 13px 14px;
+      width: 91%;
+    }
+    .career {
+      padding: 25px 0px;
+    }
+
+    .radio-button {
+      display: inline-flex;
+    }
+    p {
+      margin-bottom: 2px;
+    }
+    .main-info {
+      margin-left: 17px;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <h1 style="text-align: center">Student Registeration Form</h1>
+
+      <hr width="93%" style="margin: auto" />
+      <div class="main-info">
+        <form id="action">
+          <!-- Info -->
+          <p>Firstname:</p>
+          <input type="text" placeholder="Firstname" id="firstname" />
+          <p>Middlename:</p>
+          <input type="text" placeholder="Middlename" id="middlename" />
+          <p>Lastname:</p>
+          <input type="text" placeholder="Lastname" id="lastname" />
+          <!-- X-career -->
+          <div class="career">
+            <label>Course:</label>
+            <select>
+              <option value="Course">Course</option>
+              <option value="X-career">X-Career</option>
+              <option value="Mindx">Mindx</option>
+            </select>
+          </div>
+          <!-- Gender -->
+          <div class="radio-button">
+            <label for="Gender">Gender:</label>
+
+            <input type="radio" name="gender" value="Male" id="male" />
+            <label for="Male">Male</label>
+
+            <input type="radio" name="gender" value="Female" id="female" />
+            <label for="Female">Female</label>
+
+            <input type="radio" name="gender" value="Other" id="other" />
+            <label for="Other">Other</label>
+          </div>
+          <!-- Phone -->
+          <div class="phone1">
+            <p>Phone:</p>
+            <input type="tel" value="+91" />
+            <br /><br />
+            <input type="tel" placeholder="Phone no." id="phone" />
+          </div>
+          <!-- address -->
+          <div class="add">
+            <p>Current Address :</p>
+            <textarea
+              cols="30"
+              rows="10"
+              style="width: 92%; height: 120px; padding: 14px"
+              placeholder="Current Address :"
+            ></textarea>
+          </div>
+          <!-- Email -->
+          <div class="ema">
+            <p><b>Email:</b></p>
+            <input type="email" placeholder="Enter Email" id="email" />
+          </div>
+          <!-- password -->
+          <div class="pass">
+            <p><b>password:</b></p>
+            <input type="password" placeholder="Enter Password" id="password" />
+          </div>
+          <!-- Retire password -->
+          <div class="retype-pass">
+            <p><b>Re-type Password:</b></p>
+            <input
+              type="password"
+              placeholder="Retype Password"
+              id="retype-password"
+            />
+          </div>
+          <!-- submit -->
+          <br /><br />
+          <!-- <input type="button" style="color:#fff; background-color: Green; font-size: 14px;" value="Register" onclick="submit()"> -->
+          <button type="button" onclick="SubmitForm()">submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
